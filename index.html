@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dokumenti</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+</head>
+
+<body>
+    <div class="tab-zaglavlje">
+        <div class="tab-naslov" id="tab-naslov-dokumenti">Dokumenti</div>
+        <div class="tab-naslov" id="tab-naslov-statistika">Statistika</div>
+    </div>
+    <div class="tab prvi-tab">
+        <div class="opcije">
+            <button id="btn-lijevo-poravnanje">Lijevo poravnanje</button>
+            <button id="btn-desno-poravnanje">Desno poravnanje</button>
+            <button id="btn-centralno-poravnanje">Centralno poravnanje</button>
+            <button id="btn-veci-font">Veci font</button>
+            <button id="btn-manji-font">Manji font</button>
+            <input id="chb-zabrani" type="checkbox" /> Disable
+        </div>
+        <form class="forma-dokumenti" action="javascript:sacuvaj()">
+            <input type="text" id="txt-naziv" name="naziv" class="form-element" required placeholder="Naziv"
+                autocomplete="off" />
+            <br />
+            <textarea id="txt-sadrzaj" name="sadrzaj" required placeholder="Tekst" class="form-element" rows="15"
+                autocomplete="off"></textarea>
+            <br />
+            <input type="submit" value="Sacuvaj" />
+        </form>
+        <div class="red">
+            Ucitavanje fajla: <input type="text" id="txt-ucitaj">
+            <button id="btn-ucitaj">Ucitaj</button>
+        </div>
+    </div>
+    <div class="tab drugi-tab">
+        <canvas id="myChart" width="500" height="200"></canvas>
+    </div>
+    <div class="poruka"></div>
+</body>
+
+</html>

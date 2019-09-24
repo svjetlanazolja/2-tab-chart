@@ -1,0 +1,44 @@
+.tab-zaglavlje {
+    display: flex;
+    flex-direction: row;
+}
+
+.tab-naslov {
+    background-color: lightgrey;
+    border: 1px solid grey;
+    width: 400px;
+    font-size: 20px;
+    padding: 8px;
+    text-align: center;
+}
+
+.tab-naslov:hover {
+    background-color: grey;
+}
+
+.tab {
+    padding: 8px;
+    border: 1px solid grey;
+    width: 816px;
+}
+
+.forma-dokumenti {
+    padding-top: 16px;
+}
+
+.forma-dokumenti .form-element {
+    width: 800px;
+    padding: 8px;
+}
+
+.drugi-tab {
+    display: none;
+}
+
+.poruka {
+    display: none;
+    background-color: lightblue;
+    width: 816px;
+    padding: 8px;
+    font-size: 20px;
+}
